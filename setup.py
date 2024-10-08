@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "End-to-End-DL-MLflow-DVC-Project"
 AUTHOR_USER_NAME = "ak-sumanth"
-SRC_REPO = "cnnImageClassifier"
+SRC_REPO = "cnnImageClssifier"
 AUTHOR_EMAIL = "sumanthkalahari@gmail.com"
 
 
