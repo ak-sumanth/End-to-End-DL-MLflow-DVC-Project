@@ -1,6 +1,6 @@
-from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.components.model_evaluation_mlflow import Evaluation
-from cnnClassifier import logger
+from cnnImageClssifier.config.configuration import ConfigurationManager
+from cnnImageClssifier.components.model_evaluation_mlflow import Evaluation
+from cnnImageClssifier import logger
 
 
 
