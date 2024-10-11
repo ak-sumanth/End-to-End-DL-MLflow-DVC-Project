@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-import os
+import os,shutil
 from flask_cors import CORS, cross_origin
 from cnnImageClssifier.utils.common import decodeImage
 from cnnImageClssifier.pipeline.prediction import PredictionPipeline
@@ -36,6 +36,12 @@ def trainRoute():
     return "Training done successfully!"
 
 
+destination_directory="model"
+file_path=r"artifacts/training/model.h5"
+if not os.path.exists(destination_directory):
+    os.makedirs(destination_directory)
+shutil.copy(file_path, destination_directory)
+print("Model copied to Model directory")
 
 
 @app.route("/predict", methods=['POST'])
